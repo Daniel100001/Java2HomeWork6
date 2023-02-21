@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/city"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:background="@drawable/rounder"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Sunday, 19 May 2019| 4:30PM"
+                android:textColor="#989898"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cnopka"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/location"
+                android:text="Mumbai,india"
+                android:textSize="15sp"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                app:backgroundTint="@color/o"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <TextView
+
+                    android:id="@+id/could_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="80dp"
+                    android:drawableTop="@drawable/could"
+                    android:drawablePadding="10dp"
+                    android:text="Sunny"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:gravity="center"
+                    android:text="ӠӠ"
+                    android:textSize="50sp"
+                    app:layout_constraintBottom_toBottomOf="@id/could_ic"
+                    app:layout_constraintStart_toStartOf="@id/could_ic">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cselsia"
+                    app:layout_constraintStart_toEndOf="@id/text"
+                    app:layout_constraintTop_toTopOf="@+id/text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginBottom="35dp"
+                    android:text="35°С↑"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/text"
+                    app:layout_constraintStart_toEndOf="@id/text">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="27°С↓"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@id/text"
+                    app:layout_constraintStart_toEndOf="@id/text">
+
+                </TextView>
+
+
+                <TextView
+
+                    android:id="@+id/kapla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="160dp"
+                    android:drawableTop="@drawable/kapla"
+                    android:drawablePadding="10dp"
+                    android:text="49%"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="57dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Humidity"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="@+id/kapla"
+                    app:layout_constraintStart_toStartOf="@+id/kapla"
+                    app:layout_constraintTop_toBottomOf="@+id/kapla" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:drawableTop="@drawable/spidometr"
+                    android:drawablePadding="12dp"
+                    android:gravity="center"
+                    android:text="1,007mBar"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="@id/kapla"
+                    app:layout_constraintStart_toStartOf="@id/kapla">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Pressure"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/text1"
+                    app:layout_constraintStart_toStartOf="@+id/text1"
+                    app:layout_constraintTop_toBottomOf="@+id/text1">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/icvozduh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:drawableTop="@drawable/air"
+                    android:drawablePadding="10dp"
+                    android:text="23km/h"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text1"
+                    app:layout_constraintStart_toEndOf="@+id/text1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Wind"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/icvozduh"
+                    app:layout_constraintStart_toStartOf="@+id/icvozduh"
+                    app:layout_constraintTop_toBottomOf="@+id/icvozduh">
+
+                </TextView>
+
+
+                <TextView
+
+                    android:id="@+id/sundown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="270dp"
+                    android:drawableTop="@drawable/sundown"
+                    android:drawablePadding="10dp"
+                    android:text="6:03AM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Sunrise"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="@+id/sundown"
+                    app:layout_constraintStart_toStartOf="@+id/sundown"
+                    app:layout_constraintTop_toBottomOf="@+id/sundown" />
+
+                <TextView
+                    android:id="@+id/sunup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:drawableTop="@drawable/sunup"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="7:05PM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/sundown"
+                    app:layout_constraintStart_toStartOf="@id/sundown">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Sunset"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/sunup"
+                    app:layout_constraintStart_toStartOf="@+id/sunup"
+                    app:layout_constraintTop_toBottomOf="@+id/sunup">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/oclock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:drawableTop="@drawable/sand_clockoclok"
+                    android:drawablePadding="10dp"
+                    android:text="13h1m"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sunup"
+                    app:layout_constraintStart_toEndOf="@+id/sunup">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Daytime"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/oclock"
+                    app:layout_constraintStart_toStartOf="@+id/oclock"
+                    app:layout_constraintTop_toBottomOf="@+id/oclock">
+
+                </TextView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="35dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sundown" />
+
+                <TextView
+
+                    android:id="@+id/sundown1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/sundown"
+                    android:drawablePadding="7dp"
+                    android:elevation="11dp"
+                    android:text="Mon,21"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+                    app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+                    app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                    app:layout_constraintTop_toTopOf="@+id/materialCardView">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="31dp"
+                    android:elevation="11dp"
+                    android:text="35°С↑ 26°С↓"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/sundown1"
+                    app:layout_constraintStart_toStartOf="@+id/sundown1"
+                    app:layout_constraintTop_toBottomOf="@+id/sundown1" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+                    app:layout_constraintStart_toEndOf="@+id/materialCardView" />
+
+                <TextView
+                    android:id="@+id/sundown2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:drawableTop="@drawable/coulddown"
+                    android:drawablePadding="7dp"
+                    android:elevation="11dp"
+                    android:text="Tue,22"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/materialCardView1"
+                    app:layout_constraintEnd_toEndOf="@+id/materialCardView1"
+                    app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                    app:layout_constraintTop_toTopOf="@+id/materialCardView1">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="70dp"
+                    android:layout_height="31dp"
+                    android:elevation="11dp"
+                    android:text="35°С↑ 27°С↓"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/sundown2"
+                    app:layout_constraintStart_toStartOf="@+id/sundown2"
+                    app:layout_constraintTop_toBottomOf="@+id/sundown2" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/d"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+
+                    app:cardElevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialCardView1"
+                    app:layout_constraintStart_toEndOf="@+id/materialCardView1" />
+
+
+                <TextView
+
+                    android:id="@+id/sundown3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:drawableTop="@drawable/volni"
+                    android:drawablePadding="7dp"
+                    android:elevation="11dp"
+                    android:text="Wed,22"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/d"
+                    app:layout_constraintEnd_toEndOf="@+id/d"
+                    app:layout_constraintStart_toStartOf="@+id/d"
+                    app:layout_constraintTop_toTopOf="@+id/d">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textview8"
+                    android:layout_width="70dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="10dp"
+                    android:elevation="11dp"
+                    android:text="34°С↑ 29°С↓"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/sundown3"
+                    app:layout_constraintStart_toStartOf="@+id/sundown3"
+                    app:layout_constraintTop_toBottomOf="@+id/sundown3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
